@@ -26,9 +26,6 @@ get_logs () {
     tar xf "$tarball"
 
     rm -f "$logs" "$tarball"
-    
-    logsdir=${tarball%.*}
-    change_dir "$logsdir"
 }
 
 get_logs;
